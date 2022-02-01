@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@font-face {
+  font-family: "B Yekan";
+  src: url(fonts/BYekan.ttf) format("truetype");
+  unicode-range: U+0600-06FF;
+}
+
+body {
+  font-family: "B Yekan", Arial, Helvetica, sans-serif;
+}
+
+a,
+a:hover,
+a:visited,
+a:active {
+  color: inherit;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 13% 87%;
+  height: 100vh;
+}
+
+#loading {
+  position: absolute;
+  top: 0;
+  right: 0;
+  bottom: 0;
+  left: 0;
+  margin: auto 50% auto;
+}
+
+.tech-list,
+.results {
+  overflow-y: scroll;
+}
+
+.tech {
+  padding: 10px;
+}
+
+#submit-btn {
+  padding: 5px;
+  margin: 0 10px 10px;
+}
+
+.job {
+  border: 1px solid black;
+  margin: 5px 0;
+  padding: 10px;
+  background-color: #edeceb;
+}
+
+.description {
+  text-align: right;
+  color: #00bcef;
+  margin: 0 10px 0;
+}
+
+.posted,
+.company-info,
+.job-details,
+.tech-stack {
+  text-align: right;
+}
+
+.company,
+.city,
+.detail,
+.requirements {
+  display: inline-block;
+  margin: 0 10px 0;
+}
