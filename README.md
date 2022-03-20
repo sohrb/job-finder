@@ -10,7 +10,7 @@ A bot that grabs jobs posted on https://quera.ir/magnet/jobs
 First create a **.env** file inside the server folder and add the following line.
 
 ```
-PORT=3000
+PORT=5000
 ```
 
 Feel free to change the port.

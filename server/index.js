@@ -4,6 +4,7 @@ import "dotenv/config"
 import { getJobs } from "./job-finder.js"
 
 const app = express()
+const port = 5000 || process.env.PORT
 
 app.use(cors())
 app.use(express.json())
@@ -13,5 +14,5 @@ app.post("/", async (req, res) => {
 })
 
 app.listen(process.env.PORT, () =>
-  console.log(`Listening at http://localhost:${process.env.PORT}/`)
+  console.log(`Listening at http://localhost:${port}/`)
 )

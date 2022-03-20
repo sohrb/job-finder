@@ -1,7 +1,7 @@
 const submitBtn = document.querySelector("#submit-btn")
 const results = document.querySelector(".results")
 const loading = document.querySelector("#loading")
-const BACKEND_URL = "http://localhost:3000/"
+const BACKEND_URL = "http://localhost:5000/"
 
 loading.style.display = "none"
 

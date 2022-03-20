@@ -26,8 +26,11 @@ export async function getJobs(url) {
       const description = job.find(".chakra-heading.css-1d6x238").text()
 
       const requirements = job
-        .find(".css-q64f56.e1pk5grm2")[0]
-        .children.map((node) => node.children[0].data)
+        .find(".chakra-stack.css-whlc5b.e1pk5grm2")[0]
+        .children.filter((node) => {
+          if (node.type == "tag") return node
+        })
+        .map((node) => node.children[0].children[0].data)
 
       const details = job
         .find(".chakra-stack.css-l6bi3f")[0]
