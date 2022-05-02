@@ -1,6 +1,6 @@
 # Quera Job Finder
 
-A bot that grabs jobs posted on https://quera.ir/magnet/jobs
+A web scraper that finds jobs posted on https://quera.ir/magnet/jobs
 ![demo](demo.gif)
 
 ## How to use
