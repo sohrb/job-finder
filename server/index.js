@@ -13,6 +13,4 @@ app.post("/", async (req, res) => {
   res.json(await getJobs(req.body.url))
 })
 
-app.listen(process.env.PORT, () =>
-  console.log(`Listening at http://localhost:${port}/`)
-)
+app.listen(port, () => console.log(`Listening at http://localhost:${port}/`))
